@@ -19,11 +19,12 @@
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[11pt, a4paper]{awesome-cv-zh}
-\usepackage[encapsulated]{CJK} 
+\usepackage{xeCJK} 
 
+%Select fonts
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
-\fontdir [fonts/]
+\setCJKmainfont{Taipei Sans TC Beta}
 
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
@@ -55,13 +56,13 @@
 % \photo[rectangle,edge,right]{./examples/profile}
 \name{姓}{名}
 \position{職稱{\enskip\cdotp\enskip}職稱}
-\address{住址}
+% \address{住址}
 
-\mobile{電話}
-\email{信箱}
+\mobile{phone}
+\email{address}
 %\dateofbirth{January 1st, 1970}
 % \homepage{www.posquit0.com}
-\github{帳號}
+\github{acount}
 % \linkedin{posquit0}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
@@ -75,7 +76,7 @@
 % \googlescholar{googlescholar-id}{}
 % \extrainfo{extra information}
 
-\quote{"座右銘"}
+% \quote{"座右銘"}
 
 
 %-------------------------------------------------------------------------------
@@ -87,10 +88,10 @@
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
-\makecvfooter
-  {\today}
-  {Byungjin Park~~~·~~~Résumé}
-  {\thepage}
+% \makecvfooter
+%   {\today}
+%   {Byungjin Park~~~·~~~Résumé}
+%   {\thepage}
 
 
 %-------------------------------------------------------------------------------
